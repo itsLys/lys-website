@@ -63,10 +63,12 @@ footer.container {
 }
 
 .logo {
-  height: 2em;
-  width: 2em;
-  background-color: white;
-  display: inline-block;
+  font-family: Orbitron, sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+  letter-spacing: -.185em;
+  color: var(--color-primary);
+
   border-radius: 50%;
 }
 

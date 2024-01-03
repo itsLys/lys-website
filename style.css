@@ -1,0 +1,75 @@
+:root {
+  box-sizing: border-box;
+  font-size: 1em;
+  --main-font: Lato, Montserrat, Helvetica, arial, sans-serif;
+  --heading-font: Montserrat, Helvetica, arial, sans-serif;
+  --color-primary: #A2A2A6;
+  --color-secondary: #1B1B20;
+  --color-text: #0D0D0D;
+  --color-background: #eeeef0;
+  --color-accent: #555559;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: .01em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  font-weight: 800;
+  margin-bottom: .5rem;
+  letter-spacing: -.025em;
+}
+
+.self-intro {
+  font-size: 1.25rem;
+}
+
+header.container,
+footer.container {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+
+}
+
+.logo-container {
+  padding: 1em 2em;
+}
+
+.logo {
+  height: 2em;
+  width: 2em;
+  background-color: white;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.nav-list {
+  display: none;
+}

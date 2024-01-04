@@ -3,11 +3,11 @@
   font-size: 18px;
   --main-font: Inter, Verdana, Arial, sans-serif;
   --heading-font: Montserrat, 'Arial Black', Arial, sans-serif;
-  --color-primary: #ceced1;
-  --color-secondary: #1B1B20;
+  --color-primary: #8C8C8C;
+  --color-secondary: #404040;
   --color-text: #0D0D0D;
-  --color-background: #eeeef0;
-  --color-accent: #4a4a4b;
+  --color-background: #F2F2F2;
+  --color-accent: #E0DDD3;
 }
 
 /* font-family: 'Inter', sans-serif;
@@ -21,21 +21,25 @@ font-family: 'Nothing You Could Do', cursive; */
   padding: 0;
 }
 
-li,
-a {
-  text-decoration: none;
-  list-style-type: none;
-  color: inherit;
-}
+
 
 body {
   font-family: var(--main-font);
   background-color: var(--color-background);
   color: var(--color-text);
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: .01em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {
@@ -62,13 +66,22 @@ h6 {
 
 header.container,
 footer.container {
+  --color-text: #E0DDD3;
+  --color-accent: #0D0D0D;
   background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-text);
 
 }
 
-.logo-container {
-  padding: 1em 2em;
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container,
+.nav-toggle {
+  padding: .8em 2em;
+  display: inline-block;
 }
 
 .logo {
@@ -76,10 +89,34 @@ footer.container {
   font-size: 2em;
   font-weight: 500;
   letter-spacing: -.15em;
-  color: var(--color-primary);
+}
+
+.nav-toggle {
+  font-size: 1.5em;
 
 }
 
 .nav-list {
-  display: none;
+  display: block;
+  position: absolute;
+  background-color: var(--color-accent);
+  top: 5em;
+  text-align: center;
+  left: 1em;
+  right: 1em;
+}
+
+.nav-list li a {
+  display: block;
+  padding: .5em;
+  background-color: #404040;
+
+}
+
+.nav-list {
+  padding: .5em;
+}
+
+.nav-list li+li {
+  margin-top: .5em;
 }

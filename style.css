@@ -109,6 +109,8 @@ footer.container {
   right: .5em;
   border-radius: 5px;
   font-size: .9rem;
+  font-weight: 300;
+  letter-spacing: .05em;
 }
 
 .nav-list.open {
@@ -124,6 +126,7 @@ footer.container {
 
 .nav-list li a:hover {
   background-color: var(--color-secondary);
+
 }
 
 .nav-list {
@@ -132,4 +135,20 @@ footer.container {
 
 .nav-list li+li {
   margin-top: .8em;
+}
+
+main.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.img-container {
+  width: 68%;
+  margin: 0 auto;
+
+}
+
+.img-container>img {
+  border-radius: 5px;
 }

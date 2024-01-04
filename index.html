@@ -20,8 +20,8 @@
   <header class="container">
     <nav class="top-nav">
       <div class="logo-container"><a href="#"><span class="logo">Lys</span></a></div>
-      <div class="nav-toggle"><i class="fa fa-bars"></i></div>
-      <ul class="nav-list">
+      <div id="nav-toggle" class="nav-toggle"><i class="fa fa-bars"></i></div>
+      <ul id="nav-list" class="nav-list">
         <li><a href="">Articles</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>
@@ -31,8 +31,9 @@
     </nav>
 
   </header>
-  <main class="container self-intro">
-    <h1>Hi, I'm Lys, From Agadir, Morocco.</h1>
+  <main class="main-container">
+    <h2>Hi, I'm Lys.</h2>
+    <h3>From Agadir, Morocco.</h3>
     <img width="50%" src="images/personal-picutre.jpg" alt="guy in a cave">
     <p>
       My full name is Iliass Hajji, I'm a front-end web developer with a background in graphic and logo design, and I'm
@@ -84,7 +85,16 @@
       </ul>
     </nav>
   </footer>
-
+  <script>
+    (function () {
+      var button = document.getElementById('nav-toggle');
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        var menu = document.getElementById('nav-list');
+        menu.classList.toggle('open');
+      });
+    })(); 
+  </script>
 </body>
 
 </html>

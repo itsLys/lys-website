@@ -1,6 +1,6 @@
 :root {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 1em;
   --main-font: Inter, Verdana, Arial, sans-serif;
   --heading-font: Montserrat, 'Arial Black', Arial, sans-serif;
   --color-primary: #8C8C8C;
@@ -76,34 +76,38 @@ footer.container {
 }
 
 .top-nav {
+
+  --nav-bar-height: 3.5rem;
+  height: var(--nav-bar-height);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container,
 .nav-toggle {
-  padding: .8em 2em;
+  margin: 0 1.5em;
   display: inline-block;
 }
 
 .logo {
   font-family: 'Nothing You Could Do', monospace;
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: 500;
   letter-spacing: -.15em;
 }
 
 .nav-toggle {
-  font-size: 1.5em;
+  font-size: 1.4em;
 
 }
 
 .nav-list {
-
+  font-size: 1rem;
   display: none;
   position: absolute;
   background-color: var(--color-accent);
-  top: 5.5em;
+  top: calc(.2rem + var(--nav-bar-height));
   text-align: center;
   left: .5em;
   right: .5em;

@@ -73,6 +73,8 @@ footer.container {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .2);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo-container,
@@ -176,7 +178,7 @@ footer.container {
 }
 
 main.container {
-  max-width: 1100px;
+  max-width: 50rem;
   margin: 0 auto;
   width: 90%;
 }
@@ -198,7 +200,7 @@ main.container>h2 {
 
 @media (min-width: 765px) {
   .img-container {
-    width: 50%;
+    width: 25rem;
     float: left;
     margin: 0 2em 1em 0;
   }
@@ -216,6 +218,8 @@ main.container>h2 {
 main.container p {
   font-size: 18px;
   margin-bottom: 1.25rem;
+  margin-top: -0.3em;
+
 }
 
 footer.container {

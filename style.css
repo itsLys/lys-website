@@ -58,9 +58,12 @@ h6 {
 
 header.container,
 footer.container {
+  --color-primary: #8C8C8C;
+  --color-secondary: #404040;
   --color-text: #E0DDD3;
-  --color-accent: #0D0D0D;
-  background-color: var(--color-accent);
+  --color-background: #0D0D0D;
+  --color-accent: #F2F2F2;
+  background-color: var(--color-background);
   color: var(--color-text);
 
 }
@@ -72,7 +75,7 @@ footer.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .15);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -111,7 +114,7 @@ footer.container {
 .nav-list.open~.nav-toggle {
   cursor: pointer;
   background-color: var(--color-secondary);
-  color: var(--color-text);
+  color: var(--color-accent);
   border-radius: 5px;
 
 }
@@ -120,7 +123,7 @@ footer.container {
   font-size: 1rem;
   display: none;
   position: absolute;
-  background-color: var(--color-accent);
+  background-color: var(--color-background);
   top: calc(.2rem + var(--nav-bar-height));
   text-align: center;
   left: .5em;
@@ -157,6 +160,7 @@ footer.container {
 
 .nav-list li a:is(:hover, :focus) {
   background-color: var(--color-secondary);
+  color: var(--color-accent);
 
 
 }
@@ -174,6 +178,7 @@ footer.container {
   .nav-list li:not(:first-child) {
     margin-top: 0;
     margin-left: 1.5em;
+
   }
 }
 
@@ -200,9 +205,9 @@ main.container>h2 {
 
 @media (min-width: 765px) {
   .img-container {
-    width: 25rem;
+    width: 25.8rem;
     float: left;
-    margin: 0 2em 1em 0;
+    margin: 0 1.5em .2em 0;
   }
 
   main.container>h2 {
@@ -226,6 +231,7 @@ footer.container {
   margin-top: 6.25rem;
   padding: 2rem;
   text-align: center;
+  box-shadow: 0 -10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
 footer.container>* {
@@ -235,14 +241,11 @@ footer.container>* {
 
 footer.container .social-list>li {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: .25em;
 }
 
-.email-container a {
-  padding: .2em 0;
-  border-bottom: 1px solid;
-}
+
 
 .social-list a {
   line-height: 1;
@@ -251,7 +254,7 @@ footer.container .social-list>li {
 }
 
 .social-list a:is(:focus, :hover) {
-  color: var(--color-accent);
+  color: var(--color-background);
   background-color: var(--color-primary);
 }
 

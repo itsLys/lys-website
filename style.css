@@ -95,16 +95,11 @@ footer.container {
   margin-right: 1.5em;
 }
 
-@media (min-width:48.125em) {
-
-  .logo-container {
-    margin-left: 1.5em;
-  }
-
-  .nav-list {
-    margin-right: 1.5em;
-  }
+.nav-list {
+  margin-right: 1.5em;
 }
+
+
 
 @media (min-width:50em) {
 

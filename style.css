@@ -288,30 +288,13 @@ main.container a:is(:focus, :hover) {
   color: var(--color-secondary);
 }
 
-.contact>* {
-  background-color: var(--color-secondary);
-  color: var(--color-accent);
-  margin-bottom: .5em;
-  padding: 1em 2em;
-  border-radius: 5px;
+main.container>div>p {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
-.contact>address {
-  font-size: inherit;
-  font-style: normal;
-}
+main.container label {
+  position: absolute;
+  left: -9999999px;
 
-.contact>.social-list {
-  width: 100%;
-  text-align: center;
-}
-
-.contact li {
-  color: var(--color-accent);
-  font-size: 1.2em;
-  display: inline-block;
-}
-
-.contact .social-list a {
-  color: var(--color-accent);
 }

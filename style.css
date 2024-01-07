@@ -95,9 +95,7 @@ footer.container {
   margin-right: 1.5em;
 }
 
-.nav-list {
-  margin-right: 1.5em;
-}
+
 
 
 
@@ -107,9 +105,7 @@ footer.container {
     margin-left: 4em;
   }
 
-  .nav-list {
-    margin-right: 4em;
-  }
+
 }
 
 .logo {
@@ -155,14 +151,20 @@ footer.container {
     display: flex;
     position: static;
     background-color: transparent;
-
-
+    margin-right: 1.5em;
   }
+
 
   .nav-toggle {
     display: none;
   }
 
+}
+
+@media (min-width:50em) {
+  .nav-list {
+    margin-right: 4em;
+  }
 }
 
 .nav-list.open {
@@ -288,6 +290,10 @@ main.container a:is(:focus, :hover) {
   color: var(--color-secondary);
 }
 
+main.container form {
+  margin-top: 3em;
+}
+
 main.container>div>p {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -297,4 +303,40 @@ main.container label {
   position: absolute;
   left: -9999999px;
 
+}
+
+main.container input,
+textarea {
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  font-family: monospace;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.send-button {
+  padding: 1em 3em;
+  display: block;
+  margin-left: auto;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--color-secondary);
+  font-family: inherit;
+  color: var(--color-background);
+  letter-spacing: 2px;
+}
+
+.send-button:is(:hover, :focus) {
+  background-color: var(--color-background);
+  color: var(--color-secondary);
+  outline: 2px solid var(--color-secondary);
+  font-weight: 500;
+}
+
+textarea {
+  min-height: 12em;
+  max-width: 100%;
+  min-width: 100%;
 }

@@ -287,3 +287,31 @@ main.container a {
 main.container a:is(:focus, :hover) {
   color: var(--color-secondary);
 }
+
+.contact>* {
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+  margin-bottom: .5em;
+  padding: 1em 2em;
+  border-radius: 5px;
+}
+
+.contact>address {
+  font-size: inherit;
+  font-style: normal;
+}
+
+.contact>.social-list {
+  width: 100%;
+  text-align: center;
+}
+
+.contact li {
+  color: var(--color-accent);
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.contact .social-list a {
+  color: var(--color-accent);
+}

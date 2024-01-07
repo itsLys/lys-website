@@ -76,25 +76,44 @@ footer.container {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .15);
-  max-width: 1200px;
+  max-width: 75em;
   margin: 0 auto;
 }
 
 .logo-container,
 .nav-toggle {
   padding: .5em .9em;
-  margin: 0 1.5em;
+
   display: inline-block;
 }
 
-@media (min-width: 765px) {
+.logo-container {
+  margin-left: 1.5em;
+}
+
+.nav-toggle {
+  margin-right: 1.5em;
+}
+
+@media (min-width:48.125em) {
 
   .logo-container {
-    margin-left: 3em;
+    margin-left: 1.5em;
   }
 
   .nav-list {
-    margin-right: 3em;
+    margin-right: 1.5em;
+  }
+}
+
+@media (min-width:50em) {
+
+  .logo-container {
+    margin-left: 4em;
+  }
+
+  .nav-list {
+    margin-right: 4em;
   }
 }
 
@@ -136,17 +155,19 @@ footer.container {
   letter-spacing: .05em;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 38.75em) {
   .nav-list {
     display: flex;
     position: static;
     background-color: transparent;
+
 
   }
 
   .nav-toggle {
     display: none;
   }
+
 }
 
 .nav-list.open {
@@ -176,7 +197,7 @@ footer.container {
   margin-top: .8em;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 38.75em) {
   .nav-list li:not(:first-child) {
     margin-top: 0;
     margin-left: 1.5em;
@@ -185,7 +206,7 @@ footer.container {
 }
 
 main.container {
-  max-width: 50rem;
+  max-width: 50em;
   margin: 0 auto;
   width: 90%;
 }
@@ -201,14 +222,14 @@ main.container>h2 {
 
 .img-container {
   width: 80%;
-  max-width: 25.8rem;
-  margin: 2rem auto;
+  max-width: 25.8em;
+  margin: 2em auto;
 
 }
 
-@media (min-width: 765px) {
+@media (min-width:48.125em) {
   .img-container {
-    width: 25.8rem;
+    width: 20em;
     float: left;
     margin: 0 1.5em .2em 0;
   }
@@ -225,14 +246,14 @@ main.container>h2 {
 
 main.container p {
   font-size: 1.125rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25em;
   margin-top: -0.3em;
 
 }
 
 footer.container {
-  margin-top: 6.25rem;
-  padding: 2rem;
+  margin-top: 6.25em;
+  padding: 2em;
   text-align: center;
   box-shadow: 0 -10px 30px 0 rgba(0, 0, 0, 0.15);
 }

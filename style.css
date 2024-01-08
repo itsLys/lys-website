@@ -337,6 +337,26 @@ textarea {
   font-weight: 500;
 }
 
+.checkbox-container {
+  padding: .2em 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container .checkbox {
+  width: initial;
+  display: block;
+  margin-bottom: 0;
+  margin-right: .5em;
+}
+
+main.container .checkbox-text {
+  position: static;
+  font-size: 0.8em;
+  display: block;
+
+}
+
 textarea {
   max-height: 20em;
   min-height: 20em;
@@ -359,6 +379,8 @@ textarea {
   .name {
     width: 10em;
   }
+
+
 
   .textarea {
     width: 100%;

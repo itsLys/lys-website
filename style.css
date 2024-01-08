@@ -386,3 +386,21 @@ textarea {
     width: 100%;
   }
 }
+
+main.container>.article {
+  margin-bottom: 1.5em;
+}
+
+main.container>.article>p {
+  font-size: .9em;
+  text-align: initial;
+
+}
+
+a.text {
+  font-weight: 600;
+}
+
+main.container>.article>* {
+  margin-bottom: .5em;
+}

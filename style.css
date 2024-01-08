@@ -307,7 +307,7 @@ main.container label {
 
 main.container input,
 textarea {
-  padding: 1em;
+  padding: 1em 2em;
   margin-bottom: 1em;
   width: 100%;
   font-family: monospace;
@@ -336,7 +336,26 @@ textarea {
 }
 
 textarea {
-  min-height: 12em;
+  max-height: 18.75em;
+  min-height: 18.75em;
   max-width: 100%;
   min-width: 100%;
+}
+
+@media (min-width:50em) {
+  .input {
+    display: inline-block;
+  }
+
+  .name {
+    width: 12.5em;
+    margin-right: 1.5em;
+
+
+  }
+
+  .email {
+    width: calc(99.419% - 14em);
+
+  }
 }

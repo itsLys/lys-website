@@ -326,36 +326,41 @@ textarea {
   font-family: inherit;
   color: var(--color-background);
   letter-spacing: 2px;
+  width: 10em;
+  text-align: center;
 }
 
 .send-button:is(:hover, :focus) {
   background-color: var(--color-background);
   color: var(--color-secondary);
-  outline: 2px solid var(--color-secondary);
+  outline: 1px solid var(--color-secondary);
   font-weight: 500;
 }
 
 textarea {
-  max-height: 18.75em;
-  min-height: 18.75em;
+  max-height: 20em;
+  min-height: 20em;
   max-width: 100%;
   min-width: 100%;
 }
 
 @media (min-width:50em) {
-  .input {
-    display: inline-block;
-  }
-
-  .name {
-    width: 12.5em;
-    margin-right: 1.5em;
-
-
+  main.container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .email {
-    width: calc(99.419% - 14em);
+    flex-grow: 1;
+    margin-left: 1em;
+  }
 
+  .name {
+    width: 10em;
+  }
+
+  .textarea {
+    width: 100%;
   }
 }

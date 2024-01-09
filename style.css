@@ -414,7 +414,7 @@ main.container>.article {
 }
 
 @media (min-width:60em) {
-  main.container {
+  .main-articles-container>main.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

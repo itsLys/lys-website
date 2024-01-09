@@ -444,7 +444,7 @@ main.container>.article p {
 
 main.container>.article>.article-read-more,
 main.container>.article>.publish-info {
-  font-size: .85em;
+  font-size: .8em;
   color: var(--color-secondary);
 }
 
@@ -468,10 +468,12 @@ main.container>.article>.article-heading {
 }
 
 main.container>.article>.publish-info {
-
-  font-family: 'Courier New', Courier, monospace;
+  font-size: .7em;
+  letter-spacing: -.01em;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
   border-top: 1px solid var(--color-secondary);
-  padding-top: .8em;
+  padding-top: .8rem;
   margin-top: auto;
 
 }

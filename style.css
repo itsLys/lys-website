@@ -5,9 +5,10 @@
   --heading-font: Poppins, Montserrat, 'Arial Black', Arial, sans-serif;
   --color-bright: #FCFBFA;
   --color-dark: #0E0E0D;
-  --color-primary: #272726;
+  --color-primary: #212122;
   --color-secondary: #58585C;
   --color-accent: #001D45;
+  --nav-bar-height: 3.5rem;
 }
 
 /* font-family: 'Inter', sans-serif;
@@ -69,7 +70,7 @@ footer.container {
 
 .top-nav {
 
-  --nav-bar-height: 3.5rem;
+
   height: var(--nav-bar-height);
   display: flex;
   justify-content: space-between;
@@ -398,6 +399,29 @@ textarea {
 }
 
 /* Articles Page */
+header.articles-header {
+
+  background-color: var(--color-dark);
+  color: var(--color-bright);
+  min-height: calc(100vh - var(--nav-bar-height));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1em;
+  padding: 1.4em;
+  padding-bottom: 3em;
+}
+
+header.articles-header p {
+  font-size: 1em;
+}
+
+header.articles-header h2 {
+  font-size: 2.5em;
+  margin-bottom: .1em;
+}
+
 main.container>.article {
   display: flex;
   flex-direction: column;

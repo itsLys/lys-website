@@ -8,6 +8,12 @@
   --color-text: #0D0D0D;
   --color-background: #F2F2F2;
   --color-accent: #E0DDD3;
+
+  --color-bright: #FCFBFA;
+  --color-dark: #0E0E0D;
+  --color-primary: #272726;
+  --color-secondary: #58585C;
+  --color-accent: #001027;
 }
 
 /* font-family: 'Inter', sans-serif;

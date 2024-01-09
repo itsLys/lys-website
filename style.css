@@ -391,3 +391,62 @@ textarea {
 }
 
 /* Articles Page */
+main.container>.article {
+
+  min-height: 530px;
+  display: flex;
+  flex-direction: column;
+}
+
+main.container>.article * {
+  margin: 0;
+  padding: 0;
+}
+
+main.container>.article a {
+  color: inherit;
+  border: 0;
+  font-weight: inherit;
+}
+
+main.container>.article p {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+main.container>.article>.article-read-more,
+main.container>.article>.publish-info {
+  font-size: .85em;
+  color: var(--color-secondary);
+}
+
+main.container>.article>.article-read-more {
+  font-weight: 700;
+  font-family: var(--heading-font);
+
+  text-decoration: 2px underline;
+  margin: .8em 0;
+}
+
+main.container>.article>.article-read-more>a:hover {
+  color: var(--color-accent);
+  text-decoration: underline 2px var(--color-accent);
+}
+
+
+main.container>.article>.article-heading {
+  line-height: 1.2;
+  margin-bottom: .3em;
+}
+
+main.container>.article>.publish-info {
+  margin: .8em 0;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+hr {
+  background-color: var(--color-secondary);
+  height: 1px;
+  border: 0;
+}

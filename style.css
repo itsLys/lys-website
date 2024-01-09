@@ -3,17 +3,11 @@
   font-size: 1em;
   --main-font: Inter, Verdana, Arial, sans-serif;
   --heading-font: Poppins, Montserrat, 'Arial Black', Arial, sans-serif;
-  --color-primary: #8C8C8C;
-  --color-secondary: #404040;
-  --color-text: #0D0D0D;
-  --color-background: #F2F2F2;
-  --color-accent: #E0DDD3;
-
   --color-bright: #FCFBFA;
   --color-dark: #0E0E0D;
   --color-primary: #272726;
   --color-secondary: #58585C;
-  --color-accent: #001027;
+  --color-accent: #001D45;
 }
 
 /* font-family: 'Inter', sans-serif;
@@ -31,6 +25,8 @@ font-family: 'Nothing You Could Do', cursive; */
 
 
 body {
+  --color-text: var(--color-dark);
+  --color-background: var(--color-bright);
   font-family: var(--main-font);
   background-color: var(--color-background);
   color: var(--color-text);
@@ -39,7 +35,7 @@ body {
   font-weight: 400;
   letter-spacing: .01em;
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
-  text-align: justify;
+  text-align: ;
 }
 
 li {
@@ -64,11 +60,8 @@ h6 {
 
 header.container,
 footer.container {
-  --color-primary: #8C8C8C;
-  --color-secondary: #404040;
-  --color-text: #E0DDD3;
-  --color-background: #0D0D0D;
-  --color-accent: #F2F2F2;
+  --color-background: var(--color-dark);
+  --color-text: var(--color-bright);
   background-color: var(--color-background);
   color: var(--color-text);
 
@@ -131,8 +124,8 @@ footer.container {
 .nav-toggle:is(:hover, :focus),
 .nav-list.open~.nav-toggle {
   cursor: pointer;
-  background-color: var(--color-secondary);
-  color: var(--color-accent);
+  background-color: var(--color-primary);
+  color: var(--color-text);
   border-radius: 5px;
 
 }
@@ -185,8 +178,8 @@ footer.container {
 }
 
 .nav-list li a:is(:hover, :focus) {
-  background-color: var(--color-secondary);
-  color: var(--color-accent);
+  background-color: var(--color-primary);
+
 
 
 }
@@ -262,7 +255,7 @@ footer.container {
 }
 
 footer.container>* {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   padding: 1em;
 }
 
@@ -282,18 +275,22 @@ footer.container .social-list>li {
 
 .social-list a:is(:focus, :hover) {
   color: var(--color-background);
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 
 }
 
 main.container a {
-  color: var(--color-primary);
-  padding-bottom: 5px;
+  color: var(--color-secondary);
+  padding: 0 0 1px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
 
 }
 
 main.container a:is(:focus, :hover) {
-  color: var(--color-secondary);
+  color: var(--color-accent);
+  border-bottom: 2px solid;
+  font-weight: 500;
 }
 
 main.container form {

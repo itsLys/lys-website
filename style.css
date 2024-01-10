@@ -286,8 +286,7 @@ footer.container .social-list>li {
 
 main.container a {
   color: var(--color-secondary);
-  padding: 0 0 1px;
-  padding-bottom: 1px;
+
   border-bottom: 1px solid;
 
 }
@@ -346,7 +345,7 @@ textarea {
   font-weight: 600;
 }
 
-.checkbox-container {
+/* .checkbox-container {
   padding: .2em 0;
   display: flex;
   align-items: center;
@@ -364,7 +363,7 @@ main.container .checkbox-text {
   font-size: 0.8em;
   display: block;
 
-}
+} */
 
 textarea {
   max-height: 20em;
@@ -373,7 +372,7 @@ textarea {
   min-width: 100%;
 }
 
-@media (min-width:50em) {
+@media (min-width:38.75em) {
   main.container form {
     display: flex;
     flex-wrap: wrap;

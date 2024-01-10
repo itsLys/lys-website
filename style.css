@@ -36,7 +36,9 @@ body {
   font-weight: 400;
   letter-spacing: .01em;
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
-  text-align: ;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 li {
@@ -204,7 +206,7 @@ footer.container {
 
 main.container {
   max-width: 50em;
-  margin: 0 auto;
+  margin: 6.25em auto;
   width: 90%;
 }
 
@@ -212,10 +214,6 @@ main.container {
   .main-articles-container>main.container {
     max-width: 93em;
   }
-}
-
-main.container>*:first-child {
-  margin-top: 2.5em;
 }
 
 main.container>h2 {
@@ -255,7 +253,7 @@ main.container p {
 }
 
 footer.container {
-  margin-top: 6.25em;
+  margin-top: auto;
   padding: 2em;
   text-align: center;
   box-shadow: 0 -10px 30px 0 rgba(0, 0, 0, 0.15);

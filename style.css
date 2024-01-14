@@ -25,7 +25,7 @@ font-family: 'Nothing You Could Do', cursive; */
   border: inherit;
   font: inherit;
   text-decoration: inherit;
-  list-style: inherit;
+  list-style: none;
   transition: color .1s ease, background-color .1s ease;
 }
 
@@ -39,7 +39,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: .01em;
-  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  transition: color .3s ease, background-color .3s ease;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -64,9 +64,8 @@ footer.container {
   color: var(--color-text);
 }
 
+/* Header Navigation */
 .top-nav {
-
-
   height: var(--nav-bar-height);
   display: flex;
   justify-content: space-between;

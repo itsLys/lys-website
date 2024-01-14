@@ -20,12 +20,6 @@ font-family: 'Nothing You Could Do', cursive; */
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  color: inherit;
-  background-color: inherit;
-  border: inherit;
-  font: inherit;
-  text-decoration: inherit;
-  list-style: inherit;
   transition: color .1s ease, background-color .1s ease;
 }
 
@@ -45,6 +39,15 @@ body {
   height: 100vh;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -53,7 +56,7 @@ h5,
 h6 {
   font-family: var(--heading-font);
   font-weight: 900;
-
+  letter-spacing: -.6px;
 }
 
 header.container,

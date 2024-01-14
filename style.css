@@ -11,9 +11,6 @@
   --nav-bar-height: 3.5rem;
 }
 
-/* font-family: 'Inter', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Nothing You Could Do', cursive; */
 *,
 *::before,
 *::after {
@@ -22,11 +19,11 @@ font-family: 'Nothing You Could Do', cursive; */
   padding: 0;
   color: inherit;
   background-color: inherit;
-  border: inherit;
+  border: none;
   font: inherit;
-  text-decoration: inherit;
+  text-decoration: none;
   list-style: none;
-  transition: color .1s ease, background-color .1s ease;
+
 }
 
 body {
@@ -39,7 +36,6 @@ body {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: .01em;
-  transition: color .3s ease, background-color .3s ease;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -66,20 +62,19 @@ footer.container {
 
 /* Header Navigation */
 .top-nav {
-  height: var(--nav-bar-height);
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, .3);
   max-width: 75em;
   margin: 0 auto;
 }
 
 .logo-container,
 .nav-toggle {
-  padding: .5em .9em;
-
-  display: inline-block;
+  padding: .5em .8em;
+  display: block;
 }
 
 .logo-container {
@@ -90,16 +85,11 @@ footer.container {
   margin-right: 1.5em;
 }
 
-
-
-
-
 @media (min-width:50em) {
 
   .logo-container {
     margin-left: 4em;
   }
-
 
 }
 
@@ -131,7 +121,7 @@ footer.container {
   display: none;
   position: absolute;
   background-color: var(--color-background);
-  top: calc(.2rem + var(--nav-bar-height));
+  top: 110%;
   text-align: center;
   left: .5em;
   right: .5em;
@@ -297,7 +287,7 @@ main.container p a {
 
 }
 
-main.container a:is(:focus, :hover) {
+main.container p a:is(:focus, :hover) {
   color: var(--color-accent);
   border-bottom: 2px solid;
   font-weight: 500;
@@ -506,3 +496,7 @@ main.container>.article>.publish-info {
   margin-top: auto;
 
 }
+
+
+/* News letter form and contact form section */
+/* Articles and portfilo section  */

@@ -219,13 +219,14 @@ main.container>h2 {
   max-width: 25.8em;
   margin: 2em auto;
 
+
 }
 
 @media (min-width:48.125em) {
   .img-container {
     width: 20em;
     float: left;
-    margin: 0 1.5em .2em 0;
+    margin: 0 1em .2em 0;
   }
 
   main.container>h2 {
@@ -234,8 +235,20 @@ main.container>h2 {
 }
 
 .img-container>img {
-  border-radius: 5px;
-  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, .2);
+  display: block;
+  padding: 0 7px 7px 0;
+  background-color: var(--color-accent);
+
+}
+
+.social-list {
+  width: 100%;
+  margin: 1em auto;
+}
+
+.social-list>li {
+  display: inline-block;
+  margin: 0 .2em;
 }
 
 main.container p {
@@ -277,7 +290,7 @@ footer.container .social-list>li {
 
 }
 
-main.container a {
+main.container p a {
   color: var(--color-secondary);
 
   border-bottom: 1px solid;

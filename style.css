@@ -69,6 +69,14 @@ footer.container {
   width: 90%;
 }
 
+.content>h2 {
+  font-size: 2.5rem;
+}
+
+.content p {
+  font-size: 1.125rem;
+}
+
 p {
   margin-bottom: 1.5rem;
 }
@@ -220,10 +228,7 @@ p {
   }
 } */
 
-.about-section>h2 {
-  font-size: 2.5rem;
 
-}
 
 .about-section .img-container {
   width: 100%;
@@ -246,46 +251,13 @@ p {
 
 }
 
-.about-section p {
-  font-size: 1.125rem;
+
+.about-section>p:first-of-type {
   margin-top: -0.3em;
-
 }
 
-/* Footer */
-.social-label {
-  position: absolute;
-  left: -99999999999999px;
-}
-
-footer.container {
-  margin-top: auto;
-  padding: 2em;
-  text-align: center;
-}
-
-footer.container>* {
-  color: var(--color-secondary);
-  padding: 1em;
-}
-
-.social-list>li {
-  display: inline-block;
-  font-size: 1.5rem;
-  padding: .5em;
-}
-
-.social-list a {
-
-  padding: .5em;
-  border-radius: 5px;
-}
-
-.social-list a:is(:focus, :hover) {
-  color: var(--color-background);
-  background-color: var(--color-secondary);
-}
-
+/* Stopped Here  */
+/* Forms */
 main.container form {
   margin-top: 3em;
 }
@@ -493,3 +465,37 @@ main.container>.article>.publish-info {
 
 /* News letter form and contact form section */
 /* Articles and portfilo section  */
+
+/* Footer */
+.social-label {
+  position: absolute;
+  left: -99999999999999px;
+}
+
+footer.container {
+  margin-top: auto;
+  padding: 2em;
+  text-align: center;
+}
+
+footer.container>* {
+  color: var(--color-secondary);
+  padding: 1em;
+}
+
+.social-list>li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: .5em;
+}
+
+.social-list a {
+
+  padding: .5em;
+  border-radius: 5px;
+}
+
+.social-list a:is(:focus, :hover) {
+  color: var(--color-background);
+  background-color: var(--color-secondary);
+}

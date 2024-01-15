@@ -60,6 +60,7 @@ footer.container {
   --color-text: var(--color-bright);
   background-color: var(--color-background);
   color: var(--color-text);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.281);
 }
 
 .content.container {
@@ -251,11 +252,16 @@ p {
 
 }
 
+/* Footer */
+.social-label {
+  position: absolute;
+  left: -99999999999999px;
+}
+
 footer.container {
   margin-top: auto;
   padding: 2em;
   text-align: center;
-  box-shadow: 0 -10px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
 footer.container>* {
@@ -263,26 +269,22 @@ footer.container>* {
   padding: 1em;
 }
 
-footer.container .social-list>li {
+.social-list>li {
   display: inline-block;
   font-size: 1.5rem;
-  padding: .25em;
+  padding: .5em;
 }
 
-
-
 .social-list a {
-  line-height: 1;
-  padding: .2em .3em;
+
+  padding: .5em;
   border-radius: 5px;
 }
 
 .social-list a:is(:focus, :hover) {
   color: var(--color-background);
   background-color: var(--color-secondary);
-
 }
-
 
 main.container form {
   margin-top: 3em;

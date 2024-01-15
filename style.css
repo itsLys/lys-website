@@ -25,6 +25,7 @@
   text-decoration: none;
   list-style: none;
 
+
 }
 
 body {
@@ -39,7 +40,8 @@ body {
   letter-spacing: .01em;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+
 }
 
 h1,
@@ -311,7 +313,6 @@ p {
 }
 
 .button {
-
   display: block;
   margin-left: auto;
   border: 0;
@@ -324,6 +325,8 @@ p {
   text-align: center;
 }
 
+
+
 .button:is(:hover, :focus) {
   background-color: var(--color-secondary);
 }
@@ -335,9 +338,20 @@ textarea {
   min-width: 100%;
 }
 
+.newsletter-form .button {
+  margin-left: 0;
+}
 
-/* Stopped here */
+.newsletter-form p:last-child {
+  font-family: 'Roboto Mono', monospace;
+  font-size: .8em;
+}
+
 /* Articles Page */
+.container.gallery {
+  max-width: 90rem;
+}
+
 .container.gallery>p {
   margin-bottom: 2rem;
 }
@@ -349,18 +363,24 @@ textarea {
   font-size: 1.25em;
 }
 
-/* @media (min-width:60em) {
-  .main-articles-container>main.container {
+@media (min-width:1000px) {
+  .container.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
   }
 
-  main.container>.article {
-    width: 23em;
-    margin: 2em 1em;
+  .container.gallery>h2,
+  .container.gallery>p {
+    flex-basis: 100%;
   }
-} */
+
+  .container.gallery>.article {
+    width: 23em;
+    margin: 1em 1em;
+  }
+}
 
 .container.gallery>.article * {
   margin: 0;

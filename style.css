@@ -77,7 +77,8 @@ footer.container {
   font-size: 1.125rem;
 }
 
-.content b {
+b,
+strong {
   font-weight: 500;
 }
 

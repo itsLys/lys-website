@@ -248,6 +248,8 @@ p {
   display: block;
   padding: 0 7px 7px 0;
   background-color: var(--color-accent);
+  width: 100%;
+  height: auto;
 
 }
 
@@ -256,7 +258,6 @@ p {
   margin-top: -0.3em;
 }
 
-/* Stopped Here  */
 /* Forms */
 main.container form {
   margin-top: 3em;

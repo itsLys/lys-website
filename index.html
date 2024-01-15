@@ -42,7 +42,7 @@
     <h2>Hi, I'm Lys.</h2>
 
     <div class="img-container">
-      <img width="100%" height="auto" src="images/personal-picutre.jpg" alt="me in a cave">
+      <img src="images/personal-picutre.jpg" alt="me in a cave">
 
     </div>
 
@@ -93,45 +93,77 @@
 
 
   <!-- Forms -->
-  <main class="content container contact-form">
+  <main class="content container contact-form form">
     <h2>Contact</h2>
-    <div>
-      <p>I'm always down to collaborate.</p>
-      <p>You can fill the form bellow, find me on <a href="#social-list">social media</a> or get in touch <a
-          href="mailto:elyesseen@gmail.com">via email</a>.</p>
-      <form method="post" action="">
-        <div class="input name">
-          <label for="Name">Name</label>
-          <div>
-            <input type="text" name="Name" placeholder="Your Name" required>
-          </div>
-        </div>
-        <div class="input email">
-          <label for="Email">Email</label>
-          <div>
-            <input type="email" name="Email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="textarea">
-          <label for="Message">Message</label>
-          <div>
-            <textarea name="Message" placeholder="Write something..." required></textarea>
-          </div>
-        </div>
-        <!-- <div class="checkbox-container">
-          <input class="checkbox" type="checkbox" name="sub-checkbox" value="">
-          <label class="checkbox-text" for="sub-checkbox">Subscribe to my weekly newsletter. <a
-              href="/pages/newsletter.html">Learn more.</a></label>
-        </div> -->
-        <div class="send-button-container">
-          <button class="send-button" type="submit">Send</button>
-        </div>
-      </form>
-    </div>
 
+    <p>I'm always down to collaborate.</p>
+    <p>You can fill the form bellow, find me on <b>social media</b> or get in touch
+      <b>via email</b>.
+    </p>
+    <ul class="social-list">
+      <li><span class="social-label">X (previously twitter)</span><a href="https://twitter.com/_imlys_"
+          rel="noreferrer noopener"><i class="fa fa-twitter"></i></a></li>
+      <li><span class="social-label">Linkedin</span><a href="https://www.linkedin.com/in/elyess-hajji-20ba89252/"
+          rel="noreferrer noopener"><i class="fa fa-linkedin"></i></a></li>
+      <li><span class="social-label">GitHub</span><a href="https://github.com/itsLys" rel="noreferrer noopener"><i
+            class="fa fa-github"></i></a></li>
+      <li><span class="social-label">Email</span><a href="mailto:elyesseen@gmail.com" rel="noreferrer noopener"><i
+            class="fa fa-envelope"></i></a></li>
+    </ul>
+    <h3>Send a Message</h3>
+    <form method="post" action="">
+      <div class="input name">
+        <label for="Name">Name</label>
+        <div>
+          <input type="text" name="Name" placeholder="Your Name" required>
+        </div>
+      </div>
+      <div class="input email">
+        <label for="Email">Email</label>
+        <div>
+          <input type="email" name="Email" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="textarea">
+        <label for="Message">Message</label>
+        <div>
+          <textarea name="Message" placeholder="Write something..." required></textarea>
+        </div>
+      </div>
+      <div class="send-button-container">
+        <button class="send-button button" type="submit">Send</button>
+      </div>
+    </form>
   </main>
 
   <!--  -->
+  <!-- Newsletter form -->
+  <main class="container content newsletter-form form">
+    <h2>Lys Letter</h2>
+
+    <p>Every week I share insights on things that are interesting, well at least to me, and may interest you too.</p>
+    <p>
+      Web development, life advice, modern addiction, productivity, systems, purpose, religion, business, fitness and
+      more.
+    </p>
+    <p>
+      While I don't claim to know everything, and I don't claim to be a reliable source of knowledge, I'm pretty good at
+      learning and conveying what I learned in a clear, digestible, intuitive and understandable way.</p>
+    <p>I also try not
+      to
+      speak about something I haven't experienced, so most of the things I share are based on personal experience.
+    </p>
+
+    <p>Subscribe now!</p>
+
+    <form>
+      <label>name</label>
+      <input name="name" placeholder="First name">
+      <label>Email</label>
+      <input name="email" placeholder="Your email">
+      <button class="button" type="submit">Subscribe</button>
+    </form>
+  </main>
   <footer class="container">
     <!-- <div class="email-container"><a href="">Elyesseen@gmail.com</a></div> -->
     <nav>

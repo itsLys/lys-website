@@ -71,18 +71,32 @@ footer.container {
   margin: 0 auto;
 }
 
-.logo-container,
+.logo-container>a,
 .nav-toggle {
-  padding: .5em .8em;
+  padding: 1rem;
+  display: block;
+  border-radius: 5px;
+
+}
+
+.icon-bar {
+  width: 1.8125rem;
+  height: 0.125rem;
+  background-color: white;
   display: block;
 }
 
+.icon-bar:nth-child(2) {
+  margin: 7px 0;
+}
+
 .logo-container {
-  margin-left: 1.5em;
+  margin-left: 1.5rem;
 }
 
 .nav-toggle {
-  margin-right: 1.5em;
+  margin-right: 1.5rem;
+  cursor: pointer;
 }
 
 @media (min-width:50em) {
@@ -96,28 +110,18 @@ footer.container {
 .logo {
   font-family: 'Nothing You Could Do', monospace;
   font-size: 1.7em;
-  font-weight: 500;
   letter-spacing: -.15em;
 }
 
-.nav-toggle {
-  font-size: 1.4em;
-  line-height: 1;
 
-
-}
-
-.nav-toggle:is(:hover, :focus),
 .nav-list.open~.nav-toggle {
-  cursor: pointer;
+
   background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 5px;
 
 }
 
 .nav-list {
-  font-size: 1rem;
+  font-size: .85rem;
   display: none;
   position: absolute;
   background-color: var(--color-background);
@@ -126,17 +130,16 @@ footer.container {
   left: .5em;
   right: .5em;
   border-radius: 5px;
-  font-size: .9rem;
   font-weight: 300;
   letter-spacing: .05em;
 }
 
-@media (min-width: 38.75em) {
+@media (min-width: 39em) {
   .nav-list {
     display: flex;
     position: static;
     background-color: transparent;
-    margin-right: 1.5em;
+    margin-right: 1.5rem;
   }
 
 
@@ -148,7 +151,7 @@ footer.container {
 
 @media (min-width:50em) {
   .nav-list {
-    margin-right: 4em;
+    margin-right: 4rem;
   }
 }
 
@@ -158,20 +161,16 @@ footer.container {
 
 .nav-list li a {
   display: block;
-  padding: .7em;
+  padding: 1rem;
   border-radius: 5px;
-
 }
 
 .nav-list li a:is(:hover, :focus) {
   background-color: var(--color-primary);
-
-
-
 }
 
 .nav-list {
-  padding: .8em;
+  padding: 0.7em;
 }
 
 
@@ -179,7 +178,7 @@ footer.container {
   margin-top: .8em;
 }
 
-@media (min-width: 38.75em) {
+@media (min-width: 39em) {
   .nav-list li:not(:first-child) {
     margin-top: 0;
     margin-left: 1.5em;
@@ -187,25 +186,25 @@ footer.container {
   }
 }
 
-main.container {
-  max-width: 50em;
+/* About Section */
+.content.container {
+  max-width: 50rem;
   margin: 6.25em auto;
   width: 90%;
 }
 
-@media (min-width:100em) {
+/* @media (min-width:100em) {
   .main-articles-container>main.container {
     max-width: 93em;
   }
-}
+} */
 
-main.container>h2 {
+.about-section>h2 {
   font-size: 2.5rem;
-  line-height: 1;
 }
 
 .img-container {
-  width: 80%;
+  width: 100%;
   max-width: 25.8em;
   margin: 2em auto;
 
@@ -216,7 +215,7 @@ main.container>h2 {
   .img-container {
     width: 20em;
     float: left;
-    margin: 0 1em .2em 0;
+    margin: 0 1em 0 0;
   }
 
   main.container>h2 {

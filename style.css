@@ -88,6 +88,7 @@ p {
   margin-bottom: 1rem;
 }
 
+
 .content p a {
   color: var(--color-secondary);
 
@@ -259,6 +260,9 @@ p {
   height: auto;
 }
 
+.about-section h2 {
+  margin-top: 3rem;
+}
 
 .about-section>p:first-of-type {
   margin-top: -0.3em;

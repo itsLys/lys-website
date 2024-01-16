@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@600;700;800&family=Nothing+You+Could+Do&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
   <!-- // -->
   <title>Lys - Home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,22 +30,39 @@
         <li><a href="/pages/contact.html">Contact</a></li>
         <li><a href="/pages/about.html">About</a></li>
       </ul>
-      <div id="nav-toggle" class="nav-toggle"><i class="fa fa-bars"></i></div>
+      <div id="nav-toggle" class="nav-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
     </nav>
 
   </header>
-  <main class="container">
-
+  <main class="portfolio content container gallery">
+    <h2>My Work</h2>
+    <article class="article">
+      <div class="article-image-container">
+        <a href="">
+          <img src="https://placehold.co/600x400/000000/FFF" width="100%">
+        </a>
+      </div>
+      <h2 class="article-heading"><a href="">Lorem ipsum home page redesign</a></h2>
+      <div class="work-type info">
+        <span class="date">Webpage design</span>
+      </div>
+    </article>
   </main>
-
   <footer class="container">
-    <!-- <div class="email-container"><a href="">Elyesseen@gmail.com</a></div> -->
     <nav>
       <ul class="social-list">
-        <li><a href="https://twitter.com/_imlys_" rel="noreferrer noopener"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/elyess-hajji-20ba89252/" rel="noreferrer noopener"><i
-              class="fa fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/itsLys" rel="noreferrer noopener"><i class="fa fa-github"></i></a></li>
+        <li><span class="social-label">X (previously twitter)</span><a href="https://twitter.com/_imlys_"
+            target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter"></i></a></li>
+        <li><span class="social-label">Linkedin</span><a href="https://www.linkedin.com/in/elyess-hajji-20ba89252/"
+            target="_blank" rel="noreferrer noopener"><i class="fa fa-linkedin"></i></a></li>
+        <li><span class="social-label">GitHub</span><a href="https://github.com/itsLys" target="_blank"
+            rel="noreferrer noopener"><i class="fa fa-github"></i></a></li>
+        <li><span class="social-label">Email</span><a href="mailto:elyesseen@gmail.com" target="_blank"
+            rel="noreferrer noopener"><i class="fa fa-envelope"></i></a></li>
       </ul>
     </nav>
   </footer>
@@ -58,6 +76,7 @@
       });
     })(); 
   </script>
+
 </body>
 
 </html>

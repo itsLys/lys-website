@@ -237,6 +237,9 @@ p {
 } */
 
 
+.about-section {
+  text-align: justify;
+}
 
 .about-section .img-container {
   width: 100%;

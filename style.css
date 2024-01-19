@@ -248,9 +248,11 @@ p {
   max-width: 40rem;
 }
 
-.home>.button {
+.home.content.container>.button {
+
   font-size: .9rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   margin-right: 1rem;
   margin-left: 0;
   display: inline-block;
@@ -258,8 +260,10 @@ p {
 }
 
 .home>.button>a {
+  display: inline-block;
   border-radius: 5px;
   padding: 1em 2em;
+  min-width: 15rem;
 }
 
 /* About Section */

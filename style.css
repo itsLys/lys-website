@@ -232,6 +232,36 @@ p {
   }
 }
 
+/* Home Page */
+.home.content.container {
+  margin-top: 15rem;
+}
+
+.home>div:first-child {
+  font-size: 1em;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 900;
+}
+
+.home>p:first-of-type {
+  font-size: 1.25em;
+  max-width: 40rem;
+}
+
+.home>.button {
+  font-size: .9rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 0;
+  display: inline-block;
+  width: auto;
+}
+
+.home>.button>a {
+  border-radius: 5px;
+  padding: 1em 2em;
+}
+
 /* About Section */
 
 /* @media (min-width:100em) {
@@ -456,7 +486,6 @@ main.container>.article p {
 
 .container.gallery>.article>.info {
   font-family: 'Roboto Mono', monospace;
-  /* Font link not present */
   font-weight: 500;
   border-top: 1px solid var(--color-secondary);
   padding-top: .8em;
@@ -491,10 +520,6 @@ main.container>.article p {
 .portfolio.gallery>.article>.article-heading {
   margin-top: .5rem;
 }
-
-
-/* News letter form and contact form section */
-/* Articles and portfilo section  */
 
 /* Footer */
 .social-label {

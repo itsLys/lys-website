@@ -431,6 +431,7 @@ textarea {
   max-width: 23rem;
   margin: 0 auto 3.5rem;
   font-size: 1.25em;
+
 }
 
 @media (min-width:1000px) {
@@ -455,6 +456,16 @@ textarea {
 .container.gallery>.article * {
   margin: 0;
   padding: 0;
+}
+
+.container.gallery>.article .logo-container {
+  background-color: var(--color-dark);
+  color: var(--color-bright);
+  font-size: 1.5rem;
+  height: 200px;
+  text-align: center;
+  padding-top: 21%;
+  width: 100%;
 }
 
 .container.gallery>.article a {

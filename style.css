@@ -234,13 +234,15 @@ p {
 
 /* Home Page */
 .home.content.container {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .home>div:first-child {
-  font-size: 1em;
+  font-size: .9em;
+  margin-bottom: 1rem;
   font-family: 'Roboto Mono', monospace;
-  font-weight: 900;
+  font-weight: 500;
+  letter-spacing: .5em;
 }
 
 .home>p:first-of-type {

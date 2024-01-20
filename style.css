@@ -539,6 +539,8 @@ main.container>.article p {
 }
 
 /* Footer */
+
+
 .social-label {
   position: absolute;
   left: -99999999999999px;
@@ -548,6 +550,19 @@ footer.container {
   margin-top: auto;
   padding: 2em;
   text-align: center;
+}
+
+footer.container>* {
+  display: inline-block;
+  margin: 0 5rem;
+
+}
+
+.copy {
+  font-size: .9rem;
+  font-family: 'Roboto Mono', monospace;
+
+
 }
 
 footer.container>* {

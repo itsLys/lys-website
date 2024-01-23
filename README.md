@@ -11,7 +11,7 @@ Welcome to my personal website, Lys! This website serves as my personal portfoli
 
 ## Branches
 
-- **Main Branch:** The `main` branch is the currently launched version of the website. You can visit the live site at [your-website-url].
+- **Main Branch:** The `main` branch is the currently launched version of the website. You can visit the live site at itslys.github.io/lys-website.
 - **Dev Branch:** The `dev` branch is used for ongoing development. New features and improvements are added here before being merged into the `main` branch.
 
 ## Technologies Used

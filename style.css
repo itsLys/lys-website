@@ -585,6 +585,29 @@ article.content.container {
   margin-top: 1.5rem;
 }
 
+.article-footer {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-secondary);
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: var(--color-secondary);
+
+}
+
+.featured {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+.article-footer>div>a {
+  display: block;
+  margin: .5rem 0;
+  width: fit-content;
+  font-size: .9rem;
+}
+
 /* Footer */
 .social-label {
   position: absolute;

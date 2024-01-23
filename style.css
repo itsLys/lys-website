@@ -3,12 +3,14 @@
   box-sizing: border-box;
   font-size: 1em;
   --main-font: Inter, Verdana, Arial, sans-serif;
+  --secondary-font: 'Roboto Mono', monospace;
   --heading-font: Poppins, Montserrat, 'Arial Black', Arial, sans-serif;
   --color-bright: #FCFBFA;
   --color-dark: #0a0a0a;
   --color-primary: #212122;
   --color-secondary: #58585C;
   --color-accent: #003987;
+
   --nav-bar-height: 3.5rem;
 }
 
@@ -52,7 +54,7 @@ h5,
 h6 {
   font-family: var(--heading-font);
   font-weight: 900;
-  margin-bottom: 1rem;
+  margin-bottom: .25rem;
 
 }
 
@@ -93,13 +95,13 @@ p {
 }
 
 
-.content p a {
+.content a {
   color: var(--color-secondary);
 
 
 }
 
-.content p a:is(:focus, :hover) {
+.content a:is(:focus, :hover) {
   color: var(--color-accent);
   border-bottom: 1px solid;
   font-weight: 500;
@@ -240,7 +242,7 @@ p {
 .home>div:first-child {
   font-size: .9em;
   margin-bottom: 1rem;
-  font-family: 'Roboto Mono', monospace;
+  font-family: var(--secondary-font);
   font-weight: 500;
   letter-spacing: .5em;
 }
@@ -413,7 +415,7 @@ textarea {
 }
 
 .newsletter-form p:last-child {
-  font-family: 'Roboto Mono', monospace;
+  font-family: var(--secondary-font);
   font-size: .8em;
 }
 
@@ -491,7 +493,8 @@ main.container>.article p {
 }
 
 .container.gallery>.article>.info {
-  font-family: 'Roboto Mono', monospace;
+  font-family: var(--secondary-font);
+
   font-weight: 500;
   border-top: 1px solid var(--color-secondary);
   padding-top: .8em;
@@ -525,6 +528,61 @@ main.container>.article p {
 
 .portfolio.gallery>.article>.article-heading {
   margin-top: .5rem;
+}
+
+/* Article content */
+article.content.container {
+  background-color: white;
+  box-shadow: inset 0 0 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 45rem;
+}
+
+.article-header {
+  font-family: var(--secondary-font);
+}
+
+.categories {
+  font-size: .75rem;
+  letter-spacing: .25rem;
+  margin-bottom: 1rem;
+}
+
+.publish-info {
+  font-size: .75rem;
+  font-weight: 900;
+  display: block;
+  margin: 1rem 0;
+}
+
+.article-title {
+  font-size: 2.25rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.article-content p {
+  font-size: 1rem;
+}
+
+.article-content h1 {
+  font-size: 2rem;
+}
+
+.article-content h2 {
+  font-size: 1.66rem;
+}
+
+.article-content h3 {
+  font-size: 1.33rem;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  margin-top: 1.5rem;
 }
 
 /* Footer */

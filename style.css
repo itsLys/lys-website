@@ -54,7 +54,7 @@ h5,
 h6 {
   font-family: var(--heading-font);
   font-weight: 900;
-  margin-bottom: 2rem;
+  margin-bottom: .75rem;
 
 }
 
@@ -235,10 +235,10 @@ p {
 }
 
 /* Home Page */
-@media (min-width:48.125em) {
+@media (min-width:45em) {
   .home.content {
     display: flex;
-    gap: 2em;
+    gap: 2rem;
     align-items: center;
   }
 
@@ -260,12 +260,13 @@ p {
 .home p {
   font-size: 1.25rem;
   max-width: 22.5rem;
+  margin-bottom: 3rem;
 }
 
 .container .button {
   color: var(--color-bright);
   font-size: .8rem;
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
   margin-left: 0;
   display: inline-block;
   width: 100%;
@@ -293,26 +294,13 @@ p {
   color: var(--color-bright);
 }
 
-/* About Section */
-
-/* @media (min-width:100em) {
-  .main-articles-container>main.container {
-    max-width: 93em;
-  }
-} */
-
-
-.about-section {
-  text-align: justify;
-}
-
 .about-section .img-container {
   width: 100%;
   max-width: 25.8em;
   margin: 2em auto;
 }
 
-@media (min-width:48.125em) {
+@media (min-width:45em) {
   .about-section .img-container {
     width: 20em;
     float: left;
@@ -329,11 +317,11 @@ p {
 }
 
 .about-section h2 {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .about-section h3 {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .about-section>p:first-of-type {
@@ -341,16 +329,16 @@ p {
 }
 
 .tools {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .tool {
   text-align: center;
   display: inline-block;
-  padding: .3em;
+  padding: .25em 1em;
   margin-right: .25rem;
   min-width: 2.3em;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: var(--color-dark);
   color: var(--color-bright);
 }

@@ -54,7 +54,7 @@ h5,
 h6 {
   font-family: var(--heading-font);
   font-weight: 900;
-  margin-bottom: .25rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -73,11 +73,11 @@ footer.container {
   width: 90%;
 }
 
-.content>h2 {
+.content h2 {
   font-size: 2.5rem;
 }
 
-.content>h3 {
+.content h3 {
   font-size: 1.5rem;
 }
 
@@ -87,7 +87,7 @@ footer.container {
 
 b,
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {
@@ -95,17 +95,17 @@ p {
 }
 
 
-.content a {
+/* .content a {
   color: var(--color-secondary);
 
 
-}
+} */
 
-.content a:is(:focus, :hover) {
+/* .content a:is(:focus, :hover) {
   color: var(--color-accent);
   border-bottom: 1px solid;
   font-weight: 500;
-}
+} */
 
 
 /* Header Navigation */
@@ -209,7 +209,7 @@ p {
 
 .nav-list li a {
   display: block;
-  padding: 1rem;
+  padding: .75rem;
   border-radius: 5px;
 }
 
@@ -235,39 +235,50 @@ p {
 }
 
 /* Home Page */
+@media (min-width:48.125em) {
+  .home.content {
+    display: flex;
+    gap: 2em;
+    align-items: flex-center;
+  }
+
+  .para-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .links-container {}
+}
+
 .home.content.container {
   margin-top: 10rem;
 }
 
-.home>div:first-child {
-  font-size: .9em;
-  margin-bottom: 1rem;
-  font-family: var(--secondary-font);
-  font-weight: 500;
-  letter-spacing: .5em;
+
+.home p {
+  font-size: 1.25rem;
+  max-width: 22.5rem;
 }
 
-.home>p:first-of-type {
-  font-size: 1.25em;
-  max-width: 40rem;
-}
-
-.home.content.container>.button {
-
-  font-size: .9rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  margin-right: 1rem;
+.container .button {
+  color: var(--color-bright);
+  font-size: .8rem;
+  margin-bottom: .75rem;
   margin-left: 0;
   display: inline-block;
-  width: auto;
+  width: 100%;
 }
 
-.home>.button>a {
-  display: inline-block;
+
+.container .button:is(:hover, :focus) {
+  background-color: var(--color-dark);
+
+}
+
+.home .button>a {
+  display: block;
   border-radius: 5px;
   padding: 1em 2em;
-  min-width: 15rem;
 }
 
 /* About Section */
@@ -395,12 +406,6 @@ p {
   letter-spacing: 1px;
   width: 10em;
   text-align: center;
-}
-
-
-
-.button:is(:hover, :focus) {
-  background-color: var(--color-secondary);
 }
 
 textarea {
@@ -637,7 +642,7 @@ footer.container>* {
   border-radius: 5px;
 }
 
-.social-list a:is(:focus, :hover) {
+/* .social-list a:is(:focus, :hover) {
   color: var(--color-background);
   background-color: var(--color-secondary);
-}
+} */

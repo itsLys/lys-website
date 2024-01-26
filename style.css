@@ -635,7 +635,7 @@ footer.container>* {
 .social-list>li {
   display: inline-block;
   font-size: 1.25rem;
-  padding: .5em;
+  margin: .25rem;
 }
 
 .social-list a {
@@ -643,8 +643,3 @@ footer.container>* {
   padding: .5em;
   border-radius: 5px;
 }
-
-/* .social-list a:is(:focus, :hover) {
-  color: var(--color-background);
-  background-color: var(--color-secondary);
-} */

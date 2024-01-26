@@ -239,7 +239,7 @@ p {
   .home.content {
     display: flex;
     gap: 2em;
-    align-items: flex-center;
+    align-items: center;
   }
 
   .para-container {
@@ -247,7 +247,9 @@ p {
     flex-shrink: 0;
   }
 
-  .links-container {}
+  .links-container {
+    margin-top: 2rem;
+  }
 }
 
 .home.content.container {
@@ -279,6 +281,16 @@ p {
   display: block;
   border-radius: 5px;
   padding: 1em 2em;
+}
+
+.social-list {
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.social-list a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bright);
 }
 
 /* About Section */

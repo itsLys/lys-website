@@ -2,16 +2,37 @@
 :root {
   box-sizing: border-box;
   font-size: 1em;
-  --main-font: Inter, Verdana, Arial, sans-serif;
-  --secondary-font: 'Roboto Mono', monospace;
-  --heading-font: Poppins, Montserrat, 'Arial Black', Arial, sans-serif;
+  /* Variables: Fonts */
+  --font-main: Inter, Verdana, Arial, sans-serif;
+  --font-secondary: 'Roboto Mono', monospace;
+  --font-heading: Poppins, Montserrat, 'Arial Black', Arial, sans-serif;
+  --font-size-large: 2.5rem;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.75rem;
+  --font-size-h3: 1.5rem;
+  --font-size-medium: 1.25rem;
+  --font-size-normal: 1rem;
+  --font-size-small: .85rem;
+  --font-size-smaller: .75rem;
+  --font-size-tiny: .5rem;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-weight-black: 900;
+
+  /* Variables: Colors */
   --color-bright: #FCFBFA;
   --color-dark: #0a0a0a;
-  --color-primary: #212122;
-  --color-secondary: #58585C;
-  --color-accent: #003987;
+  --color-dark-grey: #212122;
+  --color-light-grey: #58585C;
+  --color-blue: #003987;
+  --color-foreground: var(--color-dark);
+  --color-background: var(--color-bright);
+  --color-primary: var(--color-dark-grey);
+  --color-secondary: var(--color-light-grey);
+  --color-accent: var(--color-blue);
 
-  --nav-bar-height: 3.5rem;
 }
 
 *,
@@ -33,7 +54,7 @@
 body {
   --color-text: var(--color-dark);
   --color-background: var(--color-bright);
-  font-family: var(--main-font);
+  font-family: var(--font-main);
   background-color: var(--color-background);
   color: var(--color-text);
   line-height: 1.5;
@@ -48,11 +69,8 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--heading-font);
+h3 {
+  font-family: var(--font-heading);
   font-weight: 900;
   margin-bottom: .75rem;
 
@@ -420,7 +438,7 @@ textarea {
 }
 
 .newsletter-form p:last-child {
-  font-family: var(--secondary-font);
+  font-family: var(--font-secondary);
   font-size: .8em;
 }
 
@@ -485,7 +503,7 @@ main.container>.article p {
 
 .container.gallery>.article>.article-read-more {
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-family: var(--font-heading);
   margin: .8em 0;
 }
 
@@ -500,7 +518,7 @@ main.container>.article p {
 }
 
 .container.gallery>.article>.info {
-  font-family: var(--secondary-font);
+  font-family: var(--font-secondary);
 
   font-weight: 500;
   border-top: 1px solid var(--color-secondary);
@@ -547,7 +565,7 @@ article.content.container {
 }
 
 .article-header {
-  font-family: var(--secondary-font);
+  font-family: var(--font-secondary);
 }
 
 .categories {

@@ -424,7 +424,10 @@ textarea {
   font-size: .8em;
 }
 
-/* Articles Page */
+.portfolio .article h2 {
+  font-size: 1.5rem;
+}
+
 .container.gallery {
   max-width: 90rem;
 }
@@ -434,7 +437,6 @@ textarea {
 }
 
 .container.gallery>.article {
-
   max-width: 23rem;
   margin: 0 auto 3.5rem;
   font-size: 1.25em;

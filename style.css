@@ -115,6 +115,28 @@ strong {
   background-color: var(--color-container-background);
 }
 
+.social-list {
+  border-radius: var(--border-radius);
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.social-list>li {
+  padding: .75rem;
+  display: inline-block;
+}
+
+.social-list a:hover {
+  background-color: var(--color-container-primary);
+  color: var(--color-bright);
+}
+
+.social-list a {
+  width: 2rem;
+  display: inline-block;
+  padding: .25rem .5rem;
+}
+
 /* Header Navigation */
 .container {
   background-color: var(--color-container-background);
@@ -236,19 +258,6 @@ strong {
   font-size: var(--font-size-medium);
 }
 
-.social-list {
-  text-align: center;
-  color: var(--color-secondary);
-}
-
-.social-list a:hover {
-  background-color: var(--color-primary);
-  color: var(--color-bright);
-}
-
-.social-list>li {
-  display: inline-block;
-}
 
 .img-container {
   width: 100%;

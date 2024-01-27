@@ -40,7 +40,7 @@
   --color-container-secondary: var(--color-dark-grey);
   /* Variables: Misc */
   --border-radius: 5px;
-  --box-shadow: 00;
+  --box-shadow: 0 0 4px 1px rgb(0 0 0 / 20%);
 }
 
 
@@ -68,10 +68,6 @@ body {
   color: var(--color-foreground);
   line-height: 1.5;
   letter-spacing: .01em;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
 }
 
 h1,
@@ -79,19 +75,22 @@ h2,
 h3 {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-black);
-  margin: 3rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 h1 {
   font-size: var(--font-size-h1);
+  margin-top: 3rem;
 }
 
 h2 {
   font-size: var(--font-size-h2);
+  margin-top: 2rem;
 }
 
 h3 {
   font-size: var(--font-size-h3);
+  margin-top: 1rem;
 }
 
 b,
@@ -103,7 +102,7 @@ strong {
   background-color: var(--color-container-secondary);
   color: var(--color-container-foreground);
   display: block;
-  margin: 1rem;
+  margin: 1rem 0;
   text-align: center;
   font-size: var(--font-size-normal);
   border-radius: var(--border-radius);
@@ -175,6 +174,7 @@ p a:hover {
 .container {
   background-color: var(--color-container-background);
   color: var(--color-container-foreground);
+  box-shadow: var(--box-shadow);
 }
 
 .top-nav {
@@ -295,15 +295,15 @@ p a:hover {
 
 .img-container {
   width: 100%;
-  max-width: 25.8em;
-  margin: 2em auto;
+  max-width: 25rem;
+  margin: 2rem auto;
 }
 
 @media (min-width:45em) {
   .img-container {
     width: 20rem;
     float: left;
-    margin: 0 1rem 1.5rem 0;
+    margin: 0 1rem 1rem 0;
   }
 }
 
@@ -319,7 +319,8 @@ p a:hover {
 }
 
 .tools {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-h1);
+  border-radius: var(--border-radius);
 }
 
 .tool {
@@ -334,6 +335,32 @@ p a:hover {
 
 .tool:hover {
   background-color: var(--color-container-secondary);
+}
+
+.gallery>.article {
+  padding: .5rem;
+  max-width: 23.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.gallery>.article h2 {
+  font-size: var(--font-size-h3);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gallery>.article .button {
+  display: inline-block;
+  min-width: 9rem;
+}
+
+.gallery>.article .button>a {
+  padding: .25em;
+}
+
+.gallery>.article .info {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-smaller);
 }
 
 label,

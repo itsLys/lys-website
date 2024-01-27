@@ -2,6 +2,7 @@
 :root {
   box-sizing: border-box;
   font-size: 1em;
+  scroll-behavior: smooth;
   /* Variables: Fonts */
   --font-main: Inter, Verdana, Arial, sans-serif;
   --font-secondary: 'Roboto Mono', monospace;
@@ -70,6 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
 h1,
@@ -77,6 +79,7 @@ h2,
 h3 {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-black);
+  margin: 3rem 0 1rem;
 }
 
 h1 {
@@ -136,6 +139,37 @@ strong {
   display: inline-block;
   padding: .25rem .5rem;
 }
+
+.content {
+  padding: 0 1rem;
+  max-width: 61rem;
+  margin: 0 auto;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p a {
+  color: var(--color-secondary);
+
+}
+
+p a:hover {
+  color: var(--color-accent);
+  border-bottom: 1px solid;
+  font-weight: var(--font-weight-medium);
+}
+
+.content {
+  margin-top: 15vh;
+
+}
+
+.content h2 {
+  font-size: var(--font-size-large);
+}
+
 
 /* Header Navigation */
 .container {
@@ -267,9 +301,9 @@ strong {
 
 @media (min-width:45em) {
   .img-container {
-    width: 20em;
+    width: 20rem;
     float: left;
-    margin: 0 1em 0 0;
+    margin: 0 1rem 1.5rem 0;
   }
 }
 

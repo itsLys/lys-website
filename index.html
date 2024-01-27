@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <header class="container">
+  <header class="container"> <!-- Nav -->
     <nav class="top-nav">
       <div class="logo-container">
         <a href="./">
@@ -49,7 +49,7 @@
       </div>
     </nav>
   </header>
-  <main id="home" class="content">
+  <main id="home" class="content"> <!-- Home Section -->
     <div class="para-container">
       <h2>Hi, I'm Lys.</h2>
       <p>I'm a <strong>frontend web developer</strong> hoping to further my career in software and web development.</p>
@@ -85,7 +85,7 @@
       </ul>
     </div>
   </main>
-  <section id="about" class="content">
+  <section id="about" class="content"> <!-- About section -->
     <h2>About</h2>
     <div class="img-container">
       <img src="./images/personal-picutre.jpg" alt="me in a cave">
@@ -166,7 +166,7 @@
       <li class="tool"><i title="React" class="fa-brands fa-react"></i></li>
     </ul>
   </section>
-  <section class="portfolio content container gallery">
+  <section id="portfolio" class="content gallery"> <!-- Portfolio section -->
     <h2>My Work</h2>
     <article class="article">
       <div class="article-image-container">
@@ -181,9 +181,8 @@
         <span>Study Project</span>
       </div>
     </article>
-
   </section>
-  <main class="content container contact-form form">
+  <section id="contact" class="content form">
     <h2>Get in Touch</h2>
     <p>I'm currently looking for new opportunities to further enhance my knowledge and skills. Whether you have an
       opportunity to offer, a question, or just want to say hi, use any of the links bellow and I'll try my best to
@@ -191,7 +190,7 @@
     </p>
     <p>Thanks for passing by and have a great one.</p>
     <h3>Send a Message</h3>
-    <form method="post" action="">
+    <form class="contact-form" method="post" action="">
       <div class="input name">
         <label for="Name">Name</label>
         <div>
@@ -214,7 +213,7 @@
         <button class="send-button button" type="submit">Send</button>
       </div>
     </form>
-  </main>
+  </section>
   <footer class="container">
     <nav>
       <ul class="social-list">

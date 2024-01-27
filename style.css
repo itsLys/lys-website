@@ -52,6 +52,7 @@
   color: inherit;
   background-color: inherit;
   border: none;
+  border-radius: inherit;
   font: inherit;
   text-decoration: none;
   list-style: none;
@@ -107,6 +108,7 @@ strong {
   align-items: center;
   max-width: 75em;
   margin: 0 auto;
+  border-radius: var(--border-radius);
 }
 
 .logo-container>a,
@@ -179,13 +181,6 @@ strong {
     display: none;
   }
 }
-
-@media (min-width:50em) {
-  .nav-list {
-    margin-right: 4rem;
-  }
-}
-
 
 .nav-list li a {
   display: block;

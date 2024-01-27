@@ -42,7 +42,7 @@
   --box-shadow: 00;
 }
 
-/* Make reusable buttons */
+
 *,
 *::before,
 *::after {
@@ -93,6 +93,25 @@ h3 {
 b,
 strong {
   font-weight: var(--font-weight-bold);
+}
+
+.button {
+  background-color: var(--color-container-secondary);
+  color: var(--color-container-foreground);
+  display: block;
+  margin: 1rem;
+  text-align: center;
+  font-size: var(--font-size-normal);
+  border-radius: var(--border-radius);
+}
+
+.button>* {
+  padding: .75rem;
+  display: block;
+}
+
+.button>a:hover {
+  background-color: var(--color-container-background);
 }
 
 /* Header Navigation */
@@ -228,12 +247,6 @@ strong {
 
 .social-list>li {
   display: inline-block;
-  font-size: 1.25rem;
-  margin: .25rem;
-}
-
-.social-list a {
-  padding: .5em;
 }
 
 .img-container {

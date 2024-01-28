@@ -2,7 +2,7 @@
 :root {
   box-sizing: border-box;
   font-size: 1em;
-  scroll-behavior: smooth;
+
   /* Variables: Fonts */
   --font-main: Inter, Verdana, Arial, sans-serif;
   --font-secondary: 'Roboto Mono', monospace;
@@ -43,6 +43,9 @@
   --box-shadow: 0 0 4px 1px rgb(0 0 0 / 20%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 *,
 *::before,
@@ -118,6 +121,10 @@ strong {
   background-color: var(--color-container-background);
 }
 
+.button:hover {
+  background-color: var(--color-container-background);
+}
+
 .social-list {
   border-radius: var(--border-radius);
   text-align: center;
@@ -142,7 +149,7 @@ strong {
 
 .content {
   padding: 0 1rem;
-  max-width: 61rem;
+  max-width: 55rem;
   margin: 0 auto;
 }
 
@@ -293,6 +300,28 @@ p a:hover {
   font-size: var(--font-size-medium);
 }
 
+/* Home */
+#home {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 25vh;
+  margin-bottom: 20vh;
+}
+
+#home h2 {
+  margin-top: 0;
+}
+
+.para-container {
+  max-width: 25rem;
+  flex-grow: 1;
+}
+
+.buttons-container {
+  flex-grow: 2;
+}
 
 .img-container {
   width: 100%;
@@ -321,7 +350,7 @@ p a:hover {
 
 .tools {
   font-size: var(--font-size-h1);
-  border-radius: var(--border-radius);
+  border-radius: 20px;
 }
 
 .tool {

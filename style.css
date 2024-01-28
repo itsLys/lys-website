@@ -371,21 +371,35 @@ p a:hover {
   background-color: var(--color-container-secondary);
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.gallery>h2 {
+  flex-basis: 100%;
+}
+
 .gallery>.article {
+  flex-grow: 1;
+  flex-basis: 16.66rem;
   padding: .5rem;
-  max-width: 23.5rem;
   box-shadow: var(--box-shadow);
+  margin: 0 1rem 1rem 0;
+  display: inline-block;
 }
 
 .gallery>.article h2 {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-medium);
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .gallery>.article .button {
   display: inline-block;
-  min-width: 8rem;
+  font-size: var(--font-size-small);
+  min-width: 7rem;
 }
 
 .gallery>.article .button>a {

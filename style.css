@@ -352,7 +352,7 @@ p a:hover {
 
 .gallery>.article .button {
   display: inline-block;
-  min-width: 9rem;
+  min-width: 8rem;
 }
 
 .gallery>.article .button>a {
@@ -365,15 +365,37 @@ p a:hover {
 }
 
 /* Form */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
 .input-container {
   font-family: var(--font-secondary);
-  font-size: var(--font-size-smaller);
-
+  font-size: var(--font-size-small);
   border-radius: var(--border-radius);
+  flex-grow: 1;
+}
+
+.name {
+  width: 10rem;
+  flex-grow: 0;
+}
+
+@media (max-width:400px) {
+  .name {
+    width: 100%;
+  }
+}
+
+.textarea {
+  flex-basis: 100%;
 }
 
 .input {
   padding: .5rem 1rem;
+  margin-bottom: .5rem;
   width: 100%;
   border: 1px solid var(--color-secondary);
 }
@@ -480,6 +502,7 @@ article.content.container {
 
 /* Footer */
 footer.container {
+  margin-top: 4rem;
   padding: 2em;
   text-align: center;
 }

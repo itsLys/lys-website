@@ -102,6 +102,10 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+em {
+  font-style: italic;
+}
+
 .button {
   background-color: var(--color-container-secondary);
   color: var(--color-container-foreground);
@@ -388,7 +392,7 @@ p a:hover {
   padding: .25em;
 }
 
-.gallery>.article .info {
+.info {
   font-family: var(--font-secondary);
   font-size: var(--font-size-smaller);
 }
@@ -419,7 +423,11 @@ p a:hover {
 }
 
 .textarea {
-  flex-basis: 100%;
+
+
+  max-width: 100%;
+  min-width: 100%;
+
 }
 
 .input {
@@ -539,4 +547,9 @@ footer.container {
 footer.container>* {
   color: var(--color-secondary);
   padding: 1em;
+}
+
+footer>* {
+  display: inline-block;
+  margin: 0 3rem;
 }

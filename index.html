@@ -17,6 +17,39 @@
   <title>Lys - Home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/8896b0e665.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('4L8c6zatQQcWlnJSh');
+    })();
+  </script>
+  <script type="text/javascript">
+    function success() {
+      const successMessage = document.getElementById('message-sent');
+      successMessage.textContent = 'Message sent successfully!'
+    }
+    function error() {
+      const successMessage = document.getElementById('message-sent');
+      successMessage.textContent = 'Something went wrong!'
+    }
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('service_mdq1zw3', 'template_40f1q5o', this)
+          .then(function () {
+            console.log('SUCCESS!');
+            success()
+          }, function (error) {
+            error();
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
 </head>
 
 <body>
@@ -198,28 +231,29 @@
     </p>
 
     <h3>Send a Message</h3>
-    <form class="contact-form" method="post" action="">
+    <form id="contact-form" class="contact-form" method="post" action="">
+      <input type="hidden" name="contact_number">
       <div class="input-container name">
-        <label for="name">Name</label>
+        <label for="user_name">Name</label>
         <div>
-          <input class="input" type="text" name="name" placeholder="Your Name" required>
+          <input class="input" type="text" name="user_name" placeholder="Your Name" required>
         </div>
       </div>
       <div class="input-container email">
         <label for="email">Email</label>
         <div>
-          <input class="input" type="email" name="email" placeholder="Your Email" required>
+          <input class="input" type="email" name="user_email" placeholder="Your Email" required>
         </div>
       </div>
       <div class="input-container textarea">
-        <label for="Message">Message</label>
+        <label for="message">Message</label>
         <div>
-          <textarea class="input" name="Message" placeholder="Write something..." required></textarea>
+          <textarea class="input" name="message" placeholder="Write something..." required></textarea>
         </div>
       </div>
 
-      <p id="message-sent" class="info">Your message was sent successfully!</p><button class="send button"
-        type="submit">Send</button>
+      <p id="message-sent" class="info"></p>
+      <button class="send button" type="submit" value="Send">Send</button>
 
     </form>
 
@@ -240,14 +274,14 @@
     <div class="info">&copy;Lys &mdash; all rights reserved</div>
   </footer>
   <script>
-    (function () {
-      var button = document.getElementById('nav-toggle');
-      button.addEventListener('click', function (event) {
-        event.preventDefault();
-        var menu = document.getElementById('nav-list');
-        menu.classList.toggle('open');
-      });
-    })(); 
+      (function () {
+        var button = document.getElementById('nav-toggle');
+        button.addEventListener('click', function (event) {
+          event.preventDefault();
+          var menu = document.getElementById('nav-list');
+          menu.classList.toggle('open');
+        });
+      })(); 
   </script>
 
 </body>

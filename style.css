@@ -354,21 +354,16 @@ p a:hover {
 
 .tools {
   font-size: var(--font-size-h1);
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 
 .tool {
   text-align: center;
   display: inline-block;
-  padding: .25em 1em;
-  margin-right: .25rem;
-  min-width: 2.3em;
-  background-color: var(--color-container-background);
-  color: var(--color-container-foreground);
-}
 
-.tool:hover {
-  background-color: var(--color-container-secondary);
+
+  min-width: 1em;
+  color: var(--color-foreground);
 }
 
 .gallery {

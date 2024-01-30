@@ -107,7 +107,7 @@ em {
 }
 
 .button {
-  background-color: var(--color-container-secondary);
+  background-color: var(--color-container-background);
   color: var(--color-container-foreground);
   display: block;
   margin: 1rem 0;
@@ -122,11 +122,11 @@ em {
 }
 
 .button>a:hover {
-  background-color: var(--color-container-background);
+  background-color: var(--color-container-secondary);
 }
 
 .button:hover {
-  background-color: var(--color-container-background);
+  background-color: var(--color-container-secondary);
 }
 
 .social-list {
@@ -141,7 +141,7 @@ em {
 }
 
 .social-list a:hover {
-  background-color: var(--color-container-primary);
+
   color: var(--color-bright);
 }
 
@@ -575,7 +575,7 @@ footer>* {
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  background-color: var(--color-container-secondary);
+  background-color: var(--color-container-background);
   color: var(--color-container-foreground);
   border: 1px solid var(--color-container-foreground);
   cursor: pointer;
@@ -585,6 +585,6 @@ footer>* {
 }
 
 #myBtn:hover {
-  background-color: var(--color-container-primary);
+  background-color: var(--color-container-secondary);
 
 }

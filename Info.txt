@@ -1,0 +1,5 @@
+Service Id : service_mdq1zw3
+
+Template Id : template_40f1q5o
+
+Public Key: 4L8c6zatQQcWlnJSh

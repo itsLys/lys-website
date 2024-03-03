@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <!-- Font Links -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,19 +16,53 @@
   <!-- // -->
   <title>Lys - Home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/8896b0e665.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('4L8c6zatQQcWlnJSh');
+    })();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js" defer type="text/javascript"></script>
 </head>
 
 <body>
-  <header class="container">
+  <header id="header" class="container"> <!-- Nav -->
     <nav class="top-nav">
-      <div class="logo-container"><a href="index.html"><span class="logo">Lys</span></a></div>
-
+      <div class="logo-container">
+        <a href="./">
+          <span class="logo">Lys</span>
+        </a>
+      </div>
       <ul id="nav-list" class="nav-list">
+<<<<<<< HEAD
         <!-- <li><a href="pages/blog.html">Articles</a></li> -->
         <li><a href="pages/portfolio.html">Portfolio</a></li>
         <!-- <li><a href="pages/newsletter.html">Subscribe</a></li> -->
         <!-- <li><a href="pages/contact.html">Contact</a></li> -->
         <li><a href="pages/about.html">About</a></li>
+=======
+        <!-- <li>
+          <a href="./pages/blog">Articles</a>
+        </li> -->
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <!-- <li>
+          <a href="../pages/newsletter.html">Subscribe</a>
+        </li> -->
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noreferrer noopener" href="https://cvdesignr.com/p/6424db033a19f">Resume</a>
+        </li>
+>>>>>>> dev
       </ul>
       <div id="nav-toggle" class="nav-toggle">
         <span class="icon-bar"></span>
@@ -36,23 +70,188 @@
         <span class="icon-bar"></span>
       </div>
     </nav>
-
   </header>
-  <main class="home content container">
-    <div class="">Greetings</div>
-    <h2>My name is Iliass.</h2>
-    <p>I'm a front-end web developer hoping to further my career in software and web development.</p>
-    <div class="button primary"><a href="pages/portfolio.html">View my work</a></div>
-    <div class="button secondary"><a href="pages/about.html">Learn more about me</a></div>
+  <main id="home" class="content"> <!-- Home Section -->
+    <div class="para-container">
+      <h2>Hi, I'm Lys.</h2>
+      <p>I'm a <strong>frontend web developer</strong> hoping to further my career in software and web development.</p>
+    </div>
+    <div class="buttons-container">
+      <div class="button">
+        <a href="#portfolio">View my work</a>
+      </div>
+      <div class="button">
+        <a href="#about">Learn more about me</a>
+      </div>
+      <ul class="button social-list">
+        <li>
+          <a href="https://twitter.com/_imlys_" target="_blank" rel="noreferrer noopener">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/iliass-hajji/" target="_blank" rel="noreferrer noopener">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/itsLys" target="_blank" rel="noreferrer noopener">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:elyesseen@gmail.com" target="_blank" rel="noreferrer noopener">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </main>
+  <section id="about" class="content"> <!-- About section -->
+    <h2>About</h2>
+    <div class="img-container">
+      <img src="./images/personal-picutre.jpg" alt="me in a cave">
+    </div>
+    <p>
+      My full name is Iliass Hajji, I was born and raised in Morocco, I dropped out of university,
+      <b>I'm now a frontend web developer</b> with a basic
+      knowledge and experience in graphic and logo design, and I'm looking to further enhance my web development skills
+      and learn more in a team work environment.
+    </p>
+    <p>
+      I've always been fascinated with computers and I always wanted to dive deep into how things like the internet and
+      computers work.
+    </p>
+    <p>I've recently started learning web dev, and I'm currently focusing my learning on <b>JavaScript</b>. </p>
+    <p>
+      During this ongoing journey, I learned that there is nothing magical about computers and the internet, only a
+      meticulous interplay of logical procedures, complex communication between hardware and software, translating code
+      into the binary language of 1s and 0s, controlling the amount of light on each pixel, and displaying the
+      information through these pixels.
+    </p>
+    <p>
+      I believe that <b>nothing is beyond the grasp of understanding</b> if you break each difficult concept into its
+      smallest,
+      understandable and comprehensible element. But similarly, I believe that there will always be something to learn,
+      and there will always be someone who can teach you a thing or to. This way of thinking served as a guideline
+      principle for me to learn and always keep on learning, and prevented me from falling into the delusion and the
+      arrogance associated with the belief that one has mastered everything.
+    </p>
+    <p>
+      By breaking down complex ideas into manageable fragments, I've found that, even the most difficult concepts that I
+      encountered and that previously I thought were impossible, became accessible and understandable.
+    </p>
+    <h2>Why Web Dev</h2>
+    <p>
+      Other then wanting to learn and understand, one of the reasons why I started learning web dev in particular is
+      that,
+      I always wanted to have a personal blog&mdash;a little corner where I can write, share and discuss my ideas. I
+      enjoy writing, and I'm
+      aware that there are several websites that offer a blogging platform for free and otherwise, <b>but where is the
+        fun
+        in that?</b> I like to do things by myself and I've always wanted something that is built by my hands and that I
+      can
+      customize and add anything I
+      want to it.
+    </p>
+    <p>I'm still working on the blog section of this website, but I feel that having this personal web page is a big
+      milestone towards that goal.</p>
+    <h2>Work Experience</h2>
+    <p>
+      I currently maintain my <a href="./">personal website</a>, and I also work on study
+      project that were assigned to me either by myself or by courses that I'm taking.</p>
+    <p>You can find projects that I've worked on so far <a href="#portfolio">below</a>, or on
+      my
+      <a target="_blank" rel="noreferrer noopener" href="https://github.com/itsLys">GitHub</a> profile.
+    </p>
+    <p>
+      Before starting this journey of web dev, I used to work as a freelance graphic designer for about 3 years,
+      I worked on social media graphics for mostly gamer clients, Although business failed due to me not knowing what
+      I'm doing, freelancing gave me some experience on how to work and communicate with clients and taught me a bit on
+      how to stand out in fierce
+      competition.
+    </p>
+    <h2>Skills and Tools</h2>
+    <h3>Intermediate</h3>
+    <ul class="tools">
+      <li class="tool"><i title="HTML" class="fa-brands fa-html5"></i></li>
+      <li class="tool"><i title="CSS" class="fa-brands fa-css3-alt"></i></li>
+    </ul>
+    <h3>Basic</h3>
+    <ul class="tools">
+      <li class="tool"><i title="Git" class="fa-brands fa-git-alt"></i></li>
+      <li class="tool"><i title="GitHub" class="fa-brands fa-github"></i></li>
+    </ul>
+    <h3>Newly Unlocked</h3>
+    <ul class="tools">
+      <li class="tool"><i title="JavaScript" class="fa-brands fa-js"></i></li>
+    </ul>
+    <h3>Planning to Learn</h3>
+    <ul class="tools">
+      <li class="tool"><i title="Node.js" class="fa-brands fa-node-js"></i></li>
 
+      <li class="tool"><i title="React" class="fa-brands fa-react"></i></li>
+    </ul>
+  </section>
+  <section id="portfolio" class="content gallery"> <!-- Portfolio section -->
+    <h2>My Work</h2>
+    <article class="article">
+      <div class="article-image-container">
+        <a href="">
+          <img src="https://placehold.co/600x400/000000/FFF" width="100%">
+        </a>
+      </div>
+      <h2 class="article-heading"><a href="">Lorem ipsum home page redesign</a></h2>
+      <div class="button"><a href="">Code</a></div>
+      <div class="button"><a href="">Live</a></div>
+      <div class="info">
+        <span>Study Project</span>
+      </div>
+    </article>
+  </section>
+  <section id="contact" class="content form">
+    <h2>Get in Touch</h2>
+    <p>I'm currently looking for new opportunities to further enhance my knowledge and skills. Whether you have an
+      opportunity to offer, a question, or just want to say hi, fill the form or use any of the links bellow and I'll
+      try my best to
+      answer.
+    </p>
+
+    <h3>Send a Message</h3>
+    <form id="contact-form" class="contact-form" method="post" action="">
+      <input type="hidden" name="contact_number">
+      <div class="input-container name">
+        <label for="user_name">Name</label>
+        <div>
+          <input class="input" type="text" name="user_name" placeholder="Your Name" required>
+        </div>
+      </div>
+      <div class="input-container email">
+        <label for="email">Email</label>
+        <div>
+          <input class="input" type="email" name="user_email" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="input-container textarea">
+        <label for="message">Message</label>
+        <div>
+          <textarea class="input" name="message" placeholder="Write something..." required></textarea>
+        </div>
+      </div>
+
+      <p id="message-sent" class="info"></p>
+      <button class="send button" type="submit" value="Send">Send</button>
+
+    </form>
+
+  </section>
   <footer class="container">
 
     <nav>
       <ul class="social-list">
         <li><span class="social-label">X (previously twitter)</span><a href="https://twitter.com/_imlys_"
             target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter"></i></a></li>
-        <li><span class="social-label">Linkedin</span><a href="https://www.linkedin.com/in/iliass-hajji-20ba89252/"
+        <li><span class="social-label">Linkedin</span><a href="https://www.linkedin.com/in/iliass-hajji/"
             target="_blank" rel="noreferrer noopener"><i class="fa fa-linkedin"></i></a></li>
         <li><span class="social-label">GitHub</span><a href="https://github.com/itsLys" target="_blank"
             rel="noreferrer noopener"><i class="fa fa-github"></i></a></li>
@@ -60,19 +259,13 @@
             rel="noreferrer noopener"><i class="fa fa-envelope"></i></a></li>
       </ul>
     </nav>
+<<<<<<< HEAD
     <div class="copy">&copy; Lys - All rights reserved</div>
+=======
+    <div class="info">&copy;Lys &mdash; all rights reserved</div>
+>>>>>>> dev
   </footer>
-  <script>
-    (function () {
-      var button = document.getElementById('nav-toggle');
-      button.addEventListener('click', function (event) {
-        event.preventDefault();
-        var menu = document.getElementById('nav-list');
-        menu.classList.toggle('open');
-      });
-    })(); 
-  </script>
-
+  <a href="#header"><button id="myBtn" title="Go to top"><i class="fa-solid fa-caret-up"></i></button></a>
 </body>
 
 </html>
